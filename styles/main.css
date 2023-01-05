@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* ABOUT */
+
 .about .mariuAuraLogo {
   text-align: center;
   margin: 10rem auto 25rem;
@@ -14,7 +16,6 @@
 }
 
 .about .aboutCard {
-  border: black 1px solid;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   
@@ -37,6 +38,8 @@
   background-color: black;
 }
 
+/* EVENTS */
+
 .events .eventsCardsWrapper {
   margin-top: 2rem;
 }
@@ -56,6 +59,8 @@
   width: 300px;
 }
 
+/* MAIN INFO */
+
 .mainInfo h2 {
   text-align: center;
   margin: 2rem;
@@ -64,7 +69,7 @@
 .mainInfo .mainInfoWrapper {
   margin: 0 auto;
   width: 50%;
-  border: black 1px solid;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .mainInfoWrapper .infoWrapper {
@@ -73,4 +78,16 @@
 
 .mainInfoWrapper .infoWrapper .infoText {
   width: 50%;
+}
+
+/* CONTACTS AND FORM */
+
+.contactsForm .contactsFormWrapper {
+  display: flex;
+}
+
+.contactsFormWrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
