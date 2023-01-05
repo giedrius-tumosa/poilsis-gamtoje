@@ -1,0 +1,20 @@
+/*hero part*/
+
+.hero .imagesOfHero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 100px;
+  gap: 5px;
+}
+.hero .imagesOfHero img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 16px;
+  max-width: 100%;
+  margin: 0;
+}
+.hero .cardBody {
+  display: flex;
+}
