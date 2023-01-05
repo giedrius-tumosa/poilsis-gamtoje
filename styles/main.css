@@ -56,6 +56,21 @@
   width: 300px;
 }
 
-.eventsCardsWrapper .card .cardDescription {
+.mainInfo h2 {
+  text-align: center;
+  margin: 2rem;
 }
 
+.mainInfo .mainInfoWrapper {
+  margin: 0 auto;
+  width: 50%;
+  border: black 1px solid;
+}
+
+.mainInfoWrapper .infoWrapper {
+  display: flex;
+}
+
+.mainInfoWrapper .infoWrapper .infoText {
+  width: 50%;
+}
