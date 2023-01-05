@@ -6,19 +6,31 @@
 
 /* ABOUT */
 
+.about {
+  height: 53rem;
+  background: url('/images/papildoma_paslauga/about-background.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .about .mariuAuraLogo {
   text-align: center;
-  margin: 10rem auto 25rem;
 }
 
 .about .mariuAuraLogo img {
-  width: 500px;
+  margin-top: 3rem;
+  width: 35%;
 }
 
 .about .aboutCard {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  
+  padding: 1rem;
+  margin: 0 auto 1rem;
+  width: 50%;
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 .aboutCard .aboutCardWrapper {
@@ -28,20 +40,27 @@
 }
 
 .aboutCard .aboutCardWrapper p {
-  width: 30%;
+  /* width: 50%; */
 }
 
 .aboutCard .aboutLine {
   margin: 1rem 0;
   width: 2rem;
   height: 3px;
-  background-color: black;
+  background-color: white;
 }
 
 /* EVENTS */
 
-.events .eventsCardsWrapper {
-  margin-top: 2rem;
+.events {
+  margin-top: 5rem;
+}
+
+.events .eventsHeading {
+  display: block;
+  width: 20%;
+  margin: 0 auto 5rem;
+  /* transform: translate(50%); */
 }
 
 .eventsCardsWrapper .upperCards,
@@ -53,12 +72,28 @@
 .eventsCardsWrapper .card {
   display: flex;
   width: 50%;
+  background: #fcf8ed;
 }
 
 .eventsCardsWrapper .card img {
-  width: 300px;
+  width: 50%;
 }
 
+.eventsCardsWrapper .card .cardDescription {
+  text-align: center;
+}
+
+.eventsCardsWrapper .card .cardDescription h3 {
+  margin: 3rem;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.eventsCardsWrapper .card .cardDescription p {
+  margin: 0 auto;
+  font-size: 1.4rem;
+  width: 70%;
+}
 /* MAIN INFO */
 
 .mainInfo h2 {
