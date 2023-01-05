@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  position: relative;
+}
+
+.about .mariuAuraLogo {
+  text-align: center;
+  margin: 10rem auto 25rem;
+}
+
+.mariuAuraLogo img {
+  width: 500px;
+}
+
+.aboutCard {
+  border: black 1px solid;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  
+}
+
+.aboutCard .aboutCardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutCardWrapper p {
+  width: 30%;
+}
+
+.aboutLine {
+  margin: 1rem 0;
+  width: 2rem;
+  height: 3px;
+  background-color: black;
+}
