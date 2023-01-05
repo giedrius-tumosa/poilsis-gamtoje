@@ -6,9 +6,8 @@ function loadPramoguCards(dataLink) {
   fetch(dataLink)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
-      const body = document.querySelector("body");
-      data.pramogos.forEach(el => body.append(new PramoguKortele(el)));
+      const cardsDisplaySection = document.querySelector(".cardsDisplaySection");
+      data.pramogos.forEach(el => cardsDisplaySection.append(new PramoguKortele(el)));
     });
 }
 

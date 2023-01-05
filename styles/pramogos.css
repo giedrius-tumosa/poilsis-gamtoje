@@ -1,0 +1,85 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.cardsDisplaySection {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 300px));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.pramoguKortele {
+  border: 1px solid #ddb695;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.pramoguKortele img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.pramoguKortele .cardText {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  position: relative;
+}
+
+.pramoguKortele .cardText > * {
+  margin-bottom: 0.5rem;
+}
+
+.pramoguKortele .cardDescription {
+  margin-top: 1rem;
+  display: none;
+}
+
+.pramoguKortele .reveal-description {
+  display: block;
+}
+
+.pramoguKortele .cardTitle {
+  font-size: 1.2rem;
+}
+
+/* Button Placiau */
+.buttonPlaciau {
+  background-color: #ddb695;
+  border-radius: 0 5px 5px 0;
+  width: 100px;
+  padding: 5px;
+  padding-left: 11px;
+  display: grid;
+  place-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  line-height: 0.9;
+  font-weight: bold;
+  position: relative;
+  left: -1rem;
+}
+.buttonPlaciau:hover {
+  background-color: #ac754e;
+  cursor: pointer;
+}
+.buttonPlaciau:active {
+  background-color: #ddb695;
+}

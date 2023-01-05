@@ -53,6 +53,16 @@ export default class PramoguKortele {
     textSection.append(cardTitle, buttonPlaciau, cardDescription);
     card.append(figure, textSection);
 
+    // EVENTS
+
+    buttonPlaciau.addEventListener("click", () => {
+      if (cardDescription.classList.contains("reveal-description")) {
+        cardDescription.classList.remove("reveal-description");
+      } else {
+        cardDescription.classList.add("reveal-description");
+      }
+    });
+
     return card;
   }
 }
