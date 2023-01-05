@@ -1,3 +1,5 @@
+import PramogosModal from "./pramogosModal.js";
+
 export default class PramoguKortele {
   constructor(props) {
     this.props = props;
@@ -56,11 +58,8 @@ export default class PramoguKortele {
     // EVENTS
 
     buttonPlaciau.addEventListener("click", () => {
-      if (cardDescription.classList.contains("reveal-description")) {
-        cardDescription.classList.remove("reveal-description");
-      } else {
-        cardDescription.classList.add("reveal-description");
-      }
+      const body = document.querySelector("body");
+      body.append(new PramogosModal(this.props));
     });
 
     return card;
