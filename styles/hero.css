@@ -36,7 +36,13 @@
   justify-content: center;
   margin: 20px 100px;
   font-family: 'Tinos';
+  font-style: italic;
   line-height: 30px;
+  text-align: center;
+}
+.hero .heroAboutUs h2{
+  font-style: normal;
+  letter-spacing: 2px;
 }
 .hero .imagesOfHero {
   display: flex;
@@ -55,4 +61,14 @@
 }
 .hero .cardBody {
   display: flex;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
