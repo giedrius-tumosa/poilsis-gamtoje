@@ -1,5 +1,43 @@
 /*hero part*/
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poiret+One&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
+
+.hero .heroName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .heroName h1{
+  font-family: 'Tinos';
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero .heroName p{
+  font-family: 'Tinos';
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  padding-left: 10rem;
+  margin-top: 0;
+}
+.hero .heroLowerPart {
+  font-family: 'Cutive Mono', monospace;
+  font-size: larger;
+  text-align: center;
+  width: 250px;
+  margin: 50px auto;
+}
+.hero .heroAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 100px;
+  font-family: 'Tinos';
+  line-height: 30px;
+}
 .hero .imagesOfHero {
   display: flex;
   flex-wrap: wrap;
