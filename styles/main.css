@@ -4,20 +4,16 @@
   box-sizing: border-box;
 }
 
-.about {
-  position: relative;
-}
-
 .about .mariuAuraLogo {
   text-align: center;
   margin: 10rem auto 25rem;
 }
 
-.mariuAuraLogo img {
+.about .mariuAuraLogo img {
   width: 500px;
 }
 
-.aboutCard {
+.about .aboutCard {
   border: black 1px solid;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
@@ -30,13 +26,36 @@
   align-items: center;
 }
 
-.aboutCardWrapper p {
+.aboutCard .aboutCardWrapper p {
   width: 30%;
 }
 
-.aboutLine {
+.aboutCard .aboutLine {
   margin: 1rem 0;
   width: 2rem;
   height: 3px;
   background-color: black;
 }
+
+.events .eventsCardsWrapper {
+  margin-top: 2rem;
+}
+
+.eventsCardsWrapper .upperCards,
+.eventsCardsWrapper .lowerCards {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.eventsCardsWrapper .card {
+  display: flex;
+  width: 50%;
+}
+
+.eventsCardsWrapper .card img {
+  width: 300px;
+}
+
+.eventsCardsWrapper .card .cardDescription {
+}
+
