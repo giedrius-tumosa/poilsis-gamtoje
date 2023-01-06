@@ -18,12 +18,12 @@ export default class PramogosModal {
     modalBackground.append(card);
 
     const body = document.querySelector("body");
-    // body.classList.add("blocked-scrolling");
+    body.classList.add("blocked-scrolling");
 
     console.log(body.getBoundingClientRect().height);
     console.log(window.scrollY);
 
-    // modalBackground.style.top = `${window.scrollY}`;
+    modalBackground.style.top = `${window.scrollY}px`;
 
 
 
@@ -31,7 +31,7 @@ export default class PramogosModal {
 
     modalBackground.addEventListener("click", () => {
       modalBackground.remove();
-      // body.classList.remove("blocked-scrolling");
+      body.classList.remove("blocked-scrolling");
     });
 
 

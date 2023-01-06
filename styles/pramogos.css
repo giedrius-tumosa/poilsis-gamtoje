@@ -38,8 +38,7 @@ body {
   justify-content: space-between;
   line-height: 1.5;
 }
-header,
-footer {
+header {
   height: 70px;
   border: 1px solid grey;
 }
