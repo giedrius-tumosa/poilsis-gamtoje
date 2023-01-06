@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-left: 10%;
-    color: #714423;
+    color: #5a95b3;
     font-weight: 800;
 
 }
@@ -32,7 +32,8 @@ body {
     gap: 50px;
     width: 100%;
     margin-top: 30px;
-    color: #714423;
+    color: #5a95b3;
+    font-weight: 700;
 
 
 }
