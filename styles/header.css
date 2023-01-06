@@ -1,0 +1,41 @@
+header {
+  font-family: 'Bodoni Moda';
+}
+header nav {
+  width: 100%;
+  height: 80px;
+  background-color: #0005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+header #logo {
+  border-radius: 50px;
+  margin-top: 10px;
+}
+header nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 100px;
+}
+header nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+header nav ul li:hover:not(:first-of-type) {
+  background-color: #088;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  padding: 20px;
+}
