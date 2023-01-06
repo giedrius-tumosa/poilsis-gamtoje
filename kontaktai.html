@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/kontaktai.css">
     <title>Document</title>
 </head>
 <body>
     <header></header>
-    <main>     
-       <div class="company-info">
-                <h1>Company Name</h1>
-                <p>Company description goes here</p>
-        <section class="address-info">
-          <h2>Address</h2>
-          <p>123 Main Street</p>
-          <p>City, State ZIP</p>
-          <div class="map">
-            <iframe src="https://maps.google.com/maps?q=Palanga,+Lithuania&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <main>
+        <div class="company-info">
+            <h1>Svencelės Namai</h1>
+            <p>Individualių namų kompleksas “Svencelės Namai” Jums siūlo poilsį keturiuose, skirtingos architektūros bei patogumų namuose, kurie randasi nuostabaus grožio gamtos kampelyje, tiesiai priešais Negyvąsias Kopas. Čia galėsite mėgautis ramybe, įgyvendinti savo pomėgius, atrasti gamtą bei susipažinti su Mažosios Lietuvos istorija. Tiek būdami viduje, tiek vaikštinėdami ar važinėdami dviračiais apylinkėmis, mėgausitės kvapą gniaužiančiais vaizdais, džiaugsitės  gamtos apsuptimi, namų komfortu bei jaukia ramybe prie pat Kuršių Marių kranto.
+                Tai poilsis ir vieta, kuri įkvėps jūsų svajones, nuramins sielą. </p>
+        </div>
+        <div class="info-section">
+            <div class="address-info">
+              <h2>Svencelė</h2>
+              <p>Svencelės g. 20, Klaipėdos apskritis</p>
+              <br>
+              
+              <div class="map">
+                <iframe src="https://maps.google.com/maps?q=Svencele,+Lithuania&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+            <div class="registration-form">
+              <h2>Registracija</h2>
+              <form>
+                <label for="first-name">Vardas:</label><br />
+                <input type="text" id="first-name" name="first-name" /><br />
+                <label for="last-name">Pavardė:</label><br />
+                <input type="text" id="last-name" name="last-name" /><br />
+                <label for="email">El.Paštas:</label><br />
+                <input type="email" id="email" name="email" /><br />
+                <label for="phone">Telefonas:</label><br />
+                <input type="tel" id="phone" name="phone" /><br />
+                <button type="submit">Registruotis</button>
+            </form>
           </div>
-        </section>
-        <section class="social-media">
-          <h2>Connect with us</h2>
-          <div>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="Facebook" /></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="./images/twitter.png" alt="Twitter" /></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="Instagram" /></a>
-          </div>
-        </section>
-        <section class="registration-form">
-          <h2>Sign up for updates</h2>
-          <form>
-            <label for="first-name">First Name:</label><br />
-            <input type="text" id="first-name" name="first-name" /><br />
-            <label for="last-name">Last Name:</label><br />
-            <input type="text" id="last-name" name="last-name" /><br />
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="phone">Phone:</label><br />
-            <input type="tel" id="phone" name="phone" /><br />
-            <input type="submit" value="Sign up" />
-          </form>
-        </section>
+          <br>
+        </div>
       </main>
       <footer>
-        <p>Copyright 2023 Svenceles Namai</p>
+        <div class="social-links">
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Facebook_icon.jpg" alt="Facebook" /></a>
+          <a href="#"><img src="https://techstory.in/wp-content/uploads/2021/08/Twitter-1.jpg" alt="Twitter" /></a>
+          <a href="#"><img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670_960_720.png" alt="Instagram" /></a>
+        </div>
+        <p class="copyright">Copyright © 2021 Company Name. All rights reserved.</p>
       </footer>
+    </main>     
+       
 </body>
 </html>
