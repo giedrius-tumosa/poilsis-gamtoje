@@ -1,0 +1,46 @@
+@import url(./hero.css);
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.address {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+section#middle {
+  display: flex;
+  align-items: center;
+}
+
+section#right {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
