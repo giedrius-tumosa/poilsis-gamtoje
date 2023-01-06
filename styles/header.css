@@ -1,5 +1,5 @@
 header {
-  font-family: 'Bodoni Moda';
+  font-family: "Bodoni Moda";
 }
 header nav {
   width: 100%;
@@ -8,7 +8,6 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
 }
 header #logo {
   border-radius: 50px;
@@ -21,7 +20,7 @@ header nav ul {
   align-items: center;
   gap: 100px;
 }
-header nav ul li{
+header nav ul li {
   list-style-type: none;
   display: inline-block;
   transition: 0.7s all;
