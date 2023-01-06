@@ -1,0 +1,34 @@
+{
+  "pramogos": [
+    {
+      "photoUrl": "./images/pramogos/yoga.jpg",
+      "pavadinimas": "Yoga",
+      "aprasymas": "Joga padeda mums nugalėti vidines kliūtis ir suteikia tvirtybės susidūrus su kasdieniais šiuolaikinio gyvenimo išbandymais išlikti ramiems, šaltakraujams ir susikaupusiems."
+    },
+    {
+      "photoUrl": "./images/pramogos/grill.jpg",
+      "pavadinimas": "Grilio malonumai",
+      "aprasymas": "Mūsų komanda, vedama profesionalaus virtuvės šefo, pasirūpins nuostabaus skonio maistu Jūsų šventėse bei įvairaus pobūdžio renginiuose."
+    },
+    {
+      "photoUrl": "./images/pramogos/sauna.jpg",
+      "pavadinimas": "Pirtis ir baseinas",
+      "aprasymas": "Modernioje lietuviškoje pirtyje galėsite sušilti, pakvėpuoti druskingo vandens garais, pasimėgauti natūralios medienos kvapu, o atsigaivinimui šokti į pro pirties langą matomą jūrą."
+    },
+    {
+      "photoUrl": "./images/pramogos/baskball.jpg",
+      "pavadinimas": "Krepšinio aikštelė",
+      "aprasymas": "Mėgstantiems krepšinį turime krepšinio aikštelę. Krepšinio aikštelė įrengta iš EPDM gumos granulių. Danga garantuoja gera sukibimą su sportine avalyne, bei apsaugo nuo sužalojimų nukritus."
+    },
+    {
+      "photoUrl": "./images/pramogos/water.jpg",
+      "pavadinimas": "Vandens pramogos",
+      "aprasymas": "Išbandykite ekstremalias vandens pramogas su 'Sea Safari'. Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam. Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. "
+    },
+    {
+      "photoUrl": "./images/pramogos/hike.jpg",
+      "pavadinimas": "Naktiniai žygiai",
+      "aprasymas": "Mėgstantiems žygius pasiulysime naktinė pramogą - žygį naktį pajūryje. Ar kada stebėjai žvaigždes virš jūros? Ar žinai, kokie jūriniai gyvūnai medžioja naktį?"
+    }
+  ]
+}
