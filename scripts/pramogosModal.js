@@ -17,11 +17,16 @@ export default class PramogosModal {
     card.querySelector(".buttonPlaciau").remove();
     modalBackground.append(card);
 
+    console.log(document.querySelector("html").getBoundingClientRect().width);
+    const widthBefore = document.querySelector("html").getBoundingClientRect().width;
+
     const body = document.querySelector("body");
     body.classList.add("blocked-scrolling");
 
-    console.log(body.getBoundingClientRect().height);
-    console.log(window.scrollY);
+    const widthAfter = document.querySelector("html").getBoundingClientRect().width;
+
+    const main = document.querySelector("main");
+    main.style.paddingRight = `${widthAfter - widthBefore}px`;
 
     modalBackground.style.top = `${window.scrollY}px`;
 
@@ -32,6 +37,7 @@ export default class PramogosModal {
     modalBackground.addEventListener("click", () => {
       modalBackground.remove();
       body.classList.remove("blocked-scrolling");
+      main.style.paddingRight = `unset`;
     });
 
 
