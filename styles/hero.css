@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  padding-top: 60px;
 }
 .hero .heroName h1{
   font-family: 'Bodoni Moda';
@@ -44,13 +45,16 @@ body {
 .hero .heroBackground {
    background-image: url('http://svencelesnamai.lt/wp-content/uploads/2021/03/IMG_5478.jpg');
    background-size: cover;
+   margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.37) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, 0.342) 0 1px 18px 0;
+  box-sizing: border-box;
 }
 .hero .heroAboutUs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 425px auto 50px;
+  margin: 540px auto 50px;
   padding: 20px;
   font-family: 'Tavijar';
   line-height: 30px;
@@ -67,7 +71,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 10px 160px;
+  margin: 50px 160px;
   gap: 5px;
   overflow: hidden;
   height: 600px;
@@ -85,7 +89,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 60px;
   height: 500px;
   width: 100%;
   background-image: url('http://svencelesnamai.lt/wp-content/uploads/2021/03/Frame-18-10-2020-11-45-06.jpg');
@@ -97,6 +101,9 @@ body {
   letter-spacing: 2px;
   line-height: 25px;
   text-align: center;
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.37) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, 0.342) 0 1px 18px 0;
+  box-sizing: border-box;
 }
 .hero .cardBody div {
   padding: 10px;
@@ -112,21 +119,122 @@ body {
   width: 50px;
 }
 
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
 .video{
-  background-color: rgba(255, 255, 255, 0.295);
+  background-color: rgba(230, 225, 225, 0.596);
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   z-index: 1;
   padding-top: 50px;
+}
+footer {
+  background-color: #d1e4f2f8;
+  padding-top: 10px;
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.37) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, 0.342) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+}
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: center;
+  
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+footer #left{
+  padding: 5px;
+  line-height: 30px;
+}
+footer #left > p {
+  font-family: 'Tavijar';
+  font-size: large;
+  margin: 10px auto;
+  letter-spacing: 2px;
+}
+footer i {
+  padding-right: 10px;
+  
+}
+footer img {
+  height: 120px;
+  margin: 0 auto;
+}
+footer .address {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  padding-left: 10px; 
+}
+footer .address div {
+  display: flex;
+  align-items: center;
+}
+footer .address div p, footer .address div a {
+  font-family: 'Tavijar';margin: 0;
+}
+footer section#right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  font-family: 'Tavijar';
+  font-size: large;
+}
+footer .soc-networks {
+  text-align: center;
+}
+footer a {
+  color: inherit;
+}
+
+footer ul {
+  list-style-type: none;
+}
+.copyrights p {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 12px;
+}
+header *{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+}
+
+header nav{
+  width: 100%;
+  height: 50px;
+  background-color: #0005;
+  line-height: 50px;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+header nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+
+header  nav ul li:hover{
+  background-color:#088;
+}
+
+header  nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
 }
