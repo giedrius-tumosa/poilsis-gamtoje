@@ -1,67 +1,76 @@
 /*hero part*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poiret+One&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Red+Hat+Text:wght@300&family=Taviraj:wght@100&display=swap');
 
 body {
-  margin: 0
+  margin: 0;
+  background-color: #e8d1bc8a;
 }
 .hero .heroName {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: white;
 }
 .hero .heroName h1{
-  font-family: 'Tinos';
+  font-family: 'Bodoni Moda';
   font-weight: lighter;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
   font-size: 3rem;
   margin-bottom: 10px;
-  color: aliceblue;
+  color: #fffffffd;
   margin-top: 0;
 }
 .hero .heroName p{
-  font-family: 'Tinos';
+  font-family: 'Tavijar';
   letter-spacing: 3px;
   font-size: 1.5rem;
-  padding-left: 10rem;
-  margin-top: 0;
-  color: aliceblue;
+  padding-left: 20rem;
+  margin-top: 20px;
+  color: white;
 }
 .hero .heroLowerPart {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Red Hat Text';
+  letter-spacing: 2px;
   font-size: larger;
   text-align: center;
   width: 250px;
-  margin: 100px auto;
-  color: aliceblue;
+  margin: 60px auto;
+  padding-top: 10px;
+  color: white;
+}
+.hero .heroBackground {
+   background-image: url('http://svencelesnamai.lt/wp-content/uploads/2021/03/IMG_5478.jpg');
+   background-size: cover;
 }
 .hero .heroAboutUs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px 100px;
-  font-family: 'Tinos';
+  margin: 425px auto 50px;
+  padding: 20px;
+  font-family: 'Tavijar';
   line-height: 30px;
-<<<<<<< Updated upstream
-=======
   text-align: center;
-  color: rgb(0, 0, 0);
-  margin-top: 300px;
+  color: rgb(73, 73, 73);
+  width: 500px;
+  background-color: #e8d1bc85;
 }
 .hero .heroAboutUs h2{
-  font-style: normal;
+  font-style: italic;
   letter-spacing: 2px;
->>>>>>> Stashed changes
 }
 .hero .imagesOfHero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0 100px;
+  margin: 10px 160px;
   gap: 5px;
+  overflow: hidden;
+  height: 600px;
 }
 .hero .imagesOfHero img {
   width: 300px;
@@ -73,9 +82,6 @@ body {
 }
 .hero .cardBody {
   display: flex;
-<<<<<<< Updated upstream
-}
-=======
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
@@ -85,8 +91,9 @@ body {
   background-image: url('http://svencelesnamai.lt/wp-content/uploads/2021/03/Frame-18-10-2020-11-45-06.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.7;
-  font-family: "Tinos";
+  opacity: 0.8;
+  font-family: 'Red Hat Text';
+  font-weight: bold;
   letter-spacing: 2px;
   line-height: 25px;
   text-align: center;
@@ -94,7 +101,7 @@ body {
 .hero .cardBody div {
   padding: 10px;
   box-sizing: border-box;
-  width: 200px;
+  width: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,6 +128,5 @@ video {
   margin: 0;
   padding: 0;
   z-index: 1;
-  padding-top: 300px;
+  padding-top: 50px;
 }
->>>>>>> Stashed changes
