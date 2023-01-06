@@ -10,6 +10,7 @@ export default class PramoguKortele {
 
     const card = document.createElement("article");
     card.setAttribute("class", "pramoguKortele");
+    card.classList.add("hover-card");
 
     // Figure
 

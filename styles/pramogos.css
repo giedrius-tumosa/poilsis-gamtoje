@@ -1,22 +1,92 @@
+/* EXTERNAL IMPORTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poiret+One&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Red+Hat+Text:wght@300;600&family=Taviraj:wght@100&display=swap");
+
 /* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Red Hat Text";
 }
+
+/* VARIABLES */
+
+:root {
+  /* Smeline */
+  /* --color-card-theme: #ddb695;
+  --color-card-theme-darker: #ac754e;
+  --color-card-bg: #fff;
+  --color-modal: #00000086; */
+
+  /* Melyna */
+  --color-card-theme: #b2c8df;
+  --color-card-theme-darker: #5a95b3;
+  --color-card-bg: #fff;
+  --color-modal: #00000086;
+  --card-scale-transition: transform 0.15s linear 0s;
+}
+
+/* GENERAL */
 body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+header,
+footer {
+  height: 70px;
+  border: 1px solid grey;
 }
 main {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
   align-items: center;
   width: min(1200px, 100%);
   margin: 0 auto;
+  padding-block: 1rem;
+  flex: 1;
 }
+
+.main_text {
+  width: 100%;
+  text-align: center;
+  background-image: url(../images/pramogos/sea_bridge.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-block: 1rem;
+  position: relative;
+}
+.main_text::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000000a4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main_text > * {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+
+.main_text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Bodoni Moda";
+}
+
 .cardsDisplaySection {
   width: 100%;
   display: grid;
@@ -27,15 +97,21 @@ main {
 }
 
 .pramoguKortele {
-  border: 1px solid #ddb695;
   height: fit-content;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: var(--color-card-bg);
+  transition: var(--card-scale-transition);
 }
 
+.pramoguKortele figure {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+}
 .pramoguKortele img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -43,6 +119,9 @@ main {
   padding-inline: 1rem;
   padding-block: 0.5rem;
   position: relative;
+  border: 1px solid var(--color-card-theme);
+  border-top: none;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .pramoguKortele .cardText > * {
@@ -60,11 +139,13 @@ main {
 
 .pramoguKortele .cardTitle {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 /* Button Placiau */
 .buttonPlaciau {
-  background-color: #ddb695;
+  background-color: var(--color-card-theme);
   border-radius: 0 5px 5px 0;
   width: 100px;
   padding: 5px;
@@ -80,11 +161,11 @@ main {
   left: -1rem;
 }
 .buttonPlaciau:hover {
-  background-color: #ac754e;
+  background-color: var(--color-card-theme-darker);
   cursor: pointer;
 }
 .buttonPlaciau:active {
-  background-color: #ddb695;
+  background-color: var(--color-card-theme);
 }
 
 /* MODAL */
@@ -92,7 +173,7 @@ main {
 .modal-background {
   width: 100%;
   height: 100%;
-  background-color: #00000086;
+  background-color: var(--color-modal);
   position: absolute;
   z-index: 5;
   top: 0;
@@ -104,5 +185,14 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   width: min(400px, 100%);
-  border: none;
+  border: 10px solid #fff;
+}
+
+.is_blured {
+  filter: blur(5px);
+}
+
+/* Korteles hover */
+.hover-card:hover {
+  transform: scale(1.05);
 }

@@ -11,11 +11,15 @@ export default class PramogosModal {
 
     const card = new PramoguKortele(this.cardData);
     card.classList.add("modal-content");
+    card.classList.remove("hover-card");
     card.querySelector(".cardDescription").classList.add("reveal-description");
     card.querySelector(".buttonPlaciau").remove();
     modalBackground.append(card);
 
-    // Modal event
+    const body = document.querySelector("body");
+
+
+    // Modal closure event
 
     modalBackground.addEventListener("click", () => {
       modalBackground.remove();
