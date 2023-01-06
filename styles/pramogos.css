@@ -12,18 +12,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Red Hat Text";
 }
 
 /* VARIABLES */
 
 :root {
-  /* Smeline */
-  /* --color-card-theme: #ddb695;
-  --color-card-theme-darker: #ac754e;
-  --color-card-bg: #fff;
-  --color-modal: #00000086; */
-
   /* Melyna */
   --color-card-theme: #b2c8df;
   --color-card-theme-darker: #5a95b3;
@@ -42,8 +35,6 @@ body {
   justify-content: space-between;
   line-height: 1.5;
 }
-
-/* HEADER */
 
 /* MAIN */
 
