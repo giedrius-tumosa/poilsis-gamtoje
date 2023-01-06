@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poiret+One&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Red+Hat+Text:wght@300&family=Taviraj:wght@100&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  font-family: 'Red Hat Text';
+}
+
 /* ABOUT */
 
 .about {
-  height: 53rem;
+  height: 59rem;
   background: url('/images/papildoma_paslauga/about-background.jpg');
   display: flex;
   flex-direction: column;
@@ -24,12 +31,14 @@
 }
 
 .about .aboutCard {
-  padding: 1rem;
-  margin: 0 auto 1rem;
+  padding: 2rem;
+  margin: 0 auto 1.5rem;
   width: 50%;
-  font-size: 1.3rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(51, 47, 22, 0.75);
+  background-color: rgb(252, 237, 223, 0.85);
+  color: black;
   border-radius: 10px;
 }
 
@@ -39,34 +48,30 @@
   align-items: center;
 }
 
-.aboutCard .aboutCardWrapper p {
-  /* width: 50%; */
-}
-
 .aboutCard .aboutLine {
   margin: 1rem 0;
   width: 2rem;
   height: 3px;
-  background-color: white;
+  background-color: black;
 }
 
 /* EVENTS */
 
 .events {
-  margin-top: 5rem;
+  background-color: #fceddf;
 }
 
 .events .eventsHeading {
   display: block;
   width: 20%;
-  margin: 0 auto 5rem;
-  /* transform: translate(50%); */
+  margin: 0 auto;
+  padding: 5rem 0 9rem;
 }
 
 .eventsCardsWrapper .upperCards,
 .eventsCardsWrapper .lowerCards {
   display: flex;
-  margin-bottom: 2rem;
+
 }
 
 .eventsCardsWrapper .card {
@@ -81,6 +86,7 @@
 
 .eventsCardsWrapper .card .cardDescription {
   text-align: center;
+  width: 50%;
 }
 
 .eventsCardsWrapper .card .cardDescription h3 {
@@ -96,15 +102,25 @@
 }
 /* MAIN INFO */
 
-.mainInfo h2 {
-  text-align: center;
-  margin: 2rem;
+.mainInfo {
+  background: url('../images/papildoma_paslauga/main-info-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mainInfo .mainInfoWrapper {
+  padding: 0 2rem 2rem;
+  transform: translateX(-49.9%);
   margin: 0 auto;
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(90, 80, 76, 0.8);
+  color: rgba(252, 248, 237, 0.8)
+}
+
+.mainInfo .mainInfoWrapper h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0 4rem;
 }
 
 .mainInfoWrapper .infoWrapper {
@@ -112,17 +128,78 @@
 }
 
 .mainInfoWrapper .infoWrapper .infoText {
+  font-size: 1.5rem;
   width: 50%;
+  margin: 0 2rem 1rem;
+  line-height: 2rem;
 }
 
 /* CONTACTS AND FORM */
 
+.contactsForm {
+  width: 100%;
+  background-color: #fceddf;
+}
+
 .contactsForm .contactsFormWrapper {
   display: flex;
+  justify-content: center;
+}
+
+.contactsFormWrapper .contactsSocMediaWrapper {
+  text-align: center;
+  padding: 6.5rem;
+}
+
+.contactsSocMediaWrapper .contacts {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contactsSocMediaWrapper .contacts h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.contactsSocMediaWrapper .socMedia i {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
 }
 
 .contactsFormWrapper form {
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   width: 30%;
+  line-height: 3rem;
+}
+
+.contactsFormWrapper form h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.contactsFormWrapper form label {
+  font-size: 1.1rem;
+}
+
+.contactsFormWrapper form input{
+  font-size: 1.2rem;
+}
+
+.contactsFormWrapper form textarea {
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+.contactsFormWrapper form button {
+  padding: 10px 20px;
+  width: fit-content;
+  height: fit-content;
+  border-color: rgba(0, 0, 0, 0.7);
+  background-color: #fceddf;
+  font-size: 1.4rem;
+  margin: 0 auto;
 }
