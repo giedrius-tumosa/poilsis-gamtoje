@@ -26,7 +26,11 @@ export default class PramogosModal {
     const widthAfter = document.querySelector("html").getBoundingClientRect().width;
 
     const main = document.querySelector("main");
+    const header = document.querySelector("header");
+    const footer = document.querySelector("footer");
     main.style.paddingRight = `${widthAfter - widthBefore}px`;
+    header.style.paddingRight = `${widthAfter - widthBefore}px`;
+    footer.style.paddingRight = `${widthAfter - widthBefore}px`;
 
     modalBackground.style.top = `${window.scrollY}px`;
 
@@ -38,6 +42,8 @@ export default class PramogosModal {
       modalBackground.remove();
       body.classList.remove("blocked-scrolling");
       main.style.paddingRight = `unset`;
+      header.style.paddingRight = `unset`;
+      footer.style.paddingRight = `unset`;
     });
 
 
